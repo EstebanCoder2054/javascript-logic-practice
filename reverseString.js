@@ -37,13 +37,6 @@ console.log(reverseString3('hello'));
 //   console.log(cerosToAddCount)
 // })([1,0,2,0,3,4,5,0,0,7,8,0,10,11,12,0]);
 
-// // anagram
-// const isStringPermutation = (str1, str2)=>{
-//   let temp1 = str1.split("").sort().join("");
-//   let temp2 = str2.split("").sort().join("");
-//   return temp1 === temp2;
-// }
-
 // // convertURL
 // const urlify = (string, n) => {
 //   // let newString = '';
