@@ -5,10 +5,10 @@ const flattenArray = (arrays) => {
     return arrays.reduce((a, b) => a.concat(b)); //it just work for the first level
     
     //SOLUTION 2
-    return [].concat.apply([], arrays);
+    return [].concat.apply([], arrays); //it just work for the first level
     
     //SOLUTION 3
-    return [].concat(...arrays)
+    return [].concat(...arrays) //it just work for the first level
 }
 // console.log(flattenArray(nestedArray));
 
