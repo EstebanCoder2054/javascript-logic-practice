@@ -26,3 +26,20 @@ const flattenArray2 = (arr) => {
     return flattened;
 }
 console.log(flattenArray2(nestedArray));
+
+
+//Solution flatten N levels
+const flattenNLevels = (arr, depth) => {
+    let result = [];
+    arr.forEach((item) => {
+        if (Array.isArray(item) && depth > 0) {
+            result.push(...flattenNLevels(item, depth - 1));
+        } else {
+            result.push(item);
+        }
+    });
+
+    return result;
+};
+
+console.log('flatten N levels ', flattenNLevels(nestedArray, 3));
